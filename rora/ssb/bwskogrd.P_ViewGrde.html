@@ -1,118 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="Cache-Control" content="no-cache">
-    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Pragma" name="Cache-Control" content="no-cache">
+    <meta http-equiv="Cache-Control" name="Cache-Control" content="no-cache">
     <link rel="stylesheet" href="/css/UM_web_defaultmenu.css" type="text/css">
     <link rel="stylesheet" href="/css/UM_web_defaultprint.css" type="text/css" media="print">
     <title>Final Grades</title>
-    <script type="text/javascript">
-        // Prevent multiple submissions
-        let submitCount = 0;
-
-        function checkSubmit() {
-            if (submitCount === 0) {
-                submitCount++;
-                return true;
-            } else {
-                alert("Your changes have already been submitted.");
-                return false;
-            }
-        }
-
-        // Function to open a window
-        function windowOpen(windowUrl) {
-            const helpWin = window.open(windowUrl, '', 'toolbar=yes, status=no, scrollbars=yes, menubar=yes, resizable=yes, directories=no, location=no, width=350, height=400');
-            if (helpWin) {
-                helpWin.focus();
-            }
-        }
+    <meta http-equiv="Content-Script-Type" name="Default_Script_Language" content="text/javascript"> <script language="JavaScript" type="text/javascript">
+    <!-- Hide JavaScript from older browsers
+    window.onunload=function() {submitcount=0;}
+    var submitcount=0;
+    function checkSubmit() {
+    if (submitcount== 0)
+    {
+    submitcount++;
+    return true;
+    }
+    else
+    {
+    alert("Your changes have already been submitted.");
+    return false;
+    }
+    }
+    // End script hiding -->
     </script>
-</head>
-
-<body>
+    <script language="JavaScript" type="text/javascript">
+    <!-- Hide JavaScript from older browsers
+    // Function to open a window
+    function windowOpen (window_url) {
+    helpwin = window.open(window_url, '', 'toolbar=yes, status=no, scrollbars=yes, menubar=yes, resizable=yes, directories-no, location=no,width=350,height=400'); if (document.images) {
+    if (helpwin) helpwin.focus()
+    }
+    }
+    // End script hiding -->
+    </script>
+    </head>
+     <body>
+    <div class="pageheaderdive"> </div>
     <div class="headerwrapperdiv">
-        <div class="pageheaderdiv1">
-            <a href="#main_content" class="skiplinks">Go to Main Content</a>
-            <h1>University of Manitoba - Aurora</h1>
-        </div>
-        <div class="headerlinksdiv">
-            <span class="pageheaderlinks2">
-                <a href="/ssb/twbkwbis.P_GenMenu?name=bmenu.P_GenMnu">Personal Information</a> |
-                <a href="/ssb/twbkwbis.P_GenMenu?name=bmenu.P_StuMainMnu">Enrolment & Academic Records</a> |
-                <a href="/ssb/twbkwbis.P_GenMenu?name=bmenu.P_BsacMnu">Student Awards and Financial Aid</a>
-            </span>
-        </div>
+     <div class="pageheaderdiv1">
+    <a href="#main_content" onmouseover="window.status = 'Go to Main Content'; return true" onmouseout="window.status = ''; return true" onfocus="window.status = 'Go to Main Content'; return true" onblur="window.status=''; return true" class="skiplinks">Go to Main Content</a>
+    <h1>University of Manitoba - Aurora</h1>
     </div>
-
+     <div class="headerlinksdiv">
+    <span class="pageheaderlinks2">
+     <map name="Module_Navigation_Links_H" title="Module Navigation Links">
+     <p>
+    <a href="#skip_Module Navigation_Links_H" onmouseover="window.status = 'Skip Module Navigation Links'; return true" onmouseout="window.status=''; return true" onfocus="window.st atus='Skip Module Navigation Links'; return true" onblur="window.status=''; return true" class="skiplinks">Skip Module Navigation Links</a> </p>
+    <table class="plaintable" summary="This is main table for displaying Tab Items." width="100%" cellspacing="0" cellpadding="0" border="0"> T<tbody>
+    ▾ <tr>
+    <td class="pldefault">
+    
+    
+    <!--    SECOND PHOTO     -->
+    <!--    SECOND PHOTO     -->
+    <!--    SECOND PHOTO     -->
+    <!--    SECOND PHOTO     -->
+    <!--    SECOND PHOTO     -->
+    <!--    SECOND PHOTO     -->
+    
+    <table class="plaintable" summary="This table displays Tab Items." cellspacing="0" cellpadding="0" border="0"> <tbody>
+         <tr>
+        <td class="taboff" height="22">
+        <a href="/ssb/twbkwbis.P_GenMenu?name=bmenu.P_GenMnu" onmouseover="window.status = 'New Personal Information'; return true" onmouseout="window.status = ''; return tru e" onfocus="window.status = 'New Personal Information'; return true" onblur="window.status=''; return true">Personal Information</a> </td>
+        <td class="bgtaboff" height="22" valign="top" align="right">
+        <img src="/wtlgifs/web_tab_corner_right.gif" alt="Tab Corner Right" class="headerImg" title="Tab Corner Right" name="web_tab_corner_right" hspace="0" vspace="0" border="0" height="20" width="8">
+        </td>
+        <td class="tabon" height="22">
+        <a href="/ssb/twbkwbis.P_GenMenu?name=bmenu.P_StuMainMnu" onmouseover="window.status='Enrolment & Academic Records'; return true" onmouseout="window.status = ''; re turn true" onfocus="window.status='Enrolment & Academic Records'; return true" onblur="window.status=''; return true">Enrolment & Academic Records</a> </td>
+        <td class="bgtabon" height="22" valign="top" align="right">
+        <img src="/wtlgifs/web_tab_corner_right.gif" alt="Tab Corner Right" class="headerImg" title="Tab Corner Right" name="web_tab_corner_right" hspace="0" vspace="0" border="0" height="20" width="8">
+        </td>
+        <td class="taboff" height="22">
+        <a href="/ssb/twbkwbis.P_GenMenu?name=bmenu.P_BsacMnu" onmouseover="window.status = 'Student Awards and Financial Aid'; return true" onmouseout="window.status=''; r eturn true" onfocus="window.status = 'Student Awards and Financial Aid'; return true" onblur="window.status=''; return true">Student Awards and Financial Aid</a> </td>
+        <td class="bgtaboff" height="22" valign="top" align="right">
+        <img src="/wtlgifs/web_tab_corner_right.gif" alt="Tab Corner Right" class="headerImg" title="Tab Corner Right" name="web_tab_corner_right" hspace="0" vspace="0" border="0" height="20" width="8">
+        </td>
+        </tr> </tbody> </table>
+        </td>
+        </tr>
+         <tr>
+        <td class="bgtabon" width="100%" colspan="2">
+        <img src="/wtlgifs/web_transparent.gif" alt="Transparent Image" class="headerImg" title="Transparent Image" name="web_transparent" hspace="0" vspace="0" border="0" height="3" width="10">
+        </td>
+        </tr> </tbody> </table>
+        </map>
+        </span>
+        <a name="skip_Module_Navigation_Links_H"></a>
+        </div>
+         <table class="plaintable" summary="This table displays Menu Items and Banner Search textbox." width="100%">
+        T<tbody>
+         <tr>
+        <td class="pldefault">
+        <div class="headerlinksdiv2">
+        " &nbsp; "
+        <input type="hidden" name="KEYWRD_IN" value> </div>
+        </td>
+        <td class="pldefault">
+        <p class="rightaligntext" p>
+        <span class="pageheaderlinks">
+    <!--    THIRD PHOTO     -->
+    <!--    THIRD PHOTO     -->
+    <!--    THIRD PHOTO     -->
+    <!--    THIRD PHOTO     -->
+    <!--    THIRD PHOTO     -->
+    <!--    THIRD PHOTO     -->
+    <a href="/ssb/twbkfrmt.P_DispHelp?pagename_in=bwskogrd.P_ViewGrde" accesskey="H" onclick="popup = window.open('/ssb/twbkfrmt.P_DispHelp?pagename_in=bwskogrd.P_ViewGrde', 'PopupPage', 'height=500, width=450, scrollbars=yes, resizable=yes'); return false" target="_blank" onmouseover="window.status=''; return true" onmouseout="window.status=''; return true" onfocus="window.status=''; return true" onblur="window.status=''; return true" class="submenulinktext2">HELP</a>
+    " | "
+    <a href="twbkwbis.P_Logout" accesskey="3" class="submenulinktext2">EXIT</a>
+    </span>
+    </p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
     <div class="pagetitlediv">
-        <table class="plaintable" summary="Page title and static header">
-            <tr>
-                <td>
-                    <h2>Final Grades</h2>
-                </td>
-                <td>
-                    <div class="staticheaders">
-                        <p>Rasha Ahamed - 008022933</p>
-                        <p>Winter 2024</p>
-                        <p>Dec 22, 2024 07:09 pm</p>
-                    </div>
-                </td>
-            </tr>
-        </table>
+     <table class="plaintable" summary="This table displays title and static header displays." width="100%">
+    T<tbody>
+     <tr>
+    <td class="pldefault">
+    <h2>Final Grades</h2>
+    </td>
+    <td class="pldefault"> &nbsp; </td>
+    <td class="pldefault">
+    <p class="rightaligntext" p> </p>
+    <div class="staticheaders">
+    "Rasha Ahamed - 008022933"
+    <br>
+    "Winter 2024"
+    <br>
+    "Dec 22, 2024 07:09 pm"
+    <br>
     </div>
-
-    <div class="pagebodydiv">
-        <div class="infotextdiv">
-            <span class="infotext">
-                <b>Approved final grades are released each morning. If you do not see your final grades, please check back tomorrow.</b>
-            </span>
-        </div>
-
-        <table class="datadisplaytable" summary="Student curriculum information">
-            <caption>Student Information</caption>
-            <tr>
-                <th>Current Program:</th>
-                <td>Undeclared</td>
-            </tr>
-            <tr>
-                <th>Level:</th>
-                <td>Undergraduate</td>
-            </tr>
-            <tr>
-                <th>Program:</th>
-                <td>University 1</td>
-            </tr>
-            <tr>
-                <th>Admit Term:</th>
-                <td>Winter 2024</td>
-            </tr>
-            <tr>
-                <th>Academic Standing:</th>
-                <td>Too Few Cr Hrs for Assessment</td>
-            </tr>
-        </table>
-
-        <table class="datadisplaytable" summary="Final grades table">
-            <caption>Undergraduate Coursework</caption>
-            <tr>
-                <th>CRN</th>
-                <th>Subject</th>
-                <th>Course</th>
-                <th>Title</th>
-                <th>Final Grade</th>
-            </tr>
-            <tr>
-                <td>59633</td>
-                <td>ENGL</td>
-                <td>1340</td>
-                <td>Introduction to Literary Analysis</td>
-                <td>F</td>
-            </tr>
-        </table>
+    </td>
+    </tr>
+     <tr>
+    <td class="bg3" width="100%" colspan="3">
+    <img src="/wtlgifs/web_transparent.gif" alt="Transparent Image" class="headerImg" title="Transparent Image" name="web_transparent" hspace="0" vspace="0" border="0" height="3" width="10">
+    </td>
+    </tr> </tbody> </table>
+    <a name="main_content"></a>
     </div>
-</body>
-
-</html>
+     <div class="pagebodydiv">
+    <!--
+    ** END OF twbkwbis.P_OpenDoc ** -->
+     <div class="infotextdiv">
+    <table class="infotexttable" summary="This layout table contains information that may be helpful in understanding the content and functionality of this page. It could be a brief s et of instructions, a description of error messages, or other special information.">
+    T<tbody>
+    <tr>
+    <td class="indefault">
+    <span class="infotext">
+     <b>
+    "Approved final grades are released each morning. If you do not see your final grade (s), please check back tomorrow."
+    </b>
+    </span>
+    </td>
+    </tr>
+    </tbody>
+    <!--    FOURTH PHOTO     -->
+    <!--    FOURTH PHOTO     -->
+    <!--    FOURTH PHOTO     -->
+    <!--    FOURTH PHOTO     -->
+    <!--    FOURTH PHOTO     -->
+        
+    </table> <p></p> </div>
+    <table class="datadisplaytable" summary="This layout table contains the users curriculum information for the specified term."> <caption class="captiontext">Student Information</caption>
+    T<tbody>
+     <tr>
+    <th colspan="1" class="ddlabel" scope="row">Current Program: &nbsp; </th>
+    <td colspan="2" class="dddefault">Undeclared</td>
+    </tr>
+     <tr>
+    <th colspan="1" class="ddlabel" scope="row">Level:</th>
+    <td colspan="1" class="dddefault">Undergraduate</td> </tr>
+     <tr>
+    <th colspan="1" class="ddlabel" scope="row">Program:</th>
+    <td colspan="1" class="dddefault">University 1</td> </tr>
+     <tr>
+    <th colspan="1" class="ddlabel" scope="row">Admit Term:</th> <td colspan="1" class="dddefault">Winter 2024</td> </tr> <tr>
+    <th colspan="1" class="ddlabel" scope="row">Admit Type:</th> <td colspan="1" class="dddefault">High School Admission</td> </tr>
+     <tr>
+    <th colspan="1" class="ddlabel" scope="row">Catalog Term:</th> <td colspan="1" class="dddefault">Winter 2024</td>
+    </tr>
+     <tr>
+    <th colspan="1" class="ddlabel" scope="row">Faculty:</th>
+    <td colspan="1" class="dddefault">University 1</td>
+    </tr>
+     <tr>
+    <th colspan="1" class="ddlabel" scope="row">Campus:</th>
+    <td colspan="1" class="dddefault">Main (Fort Garry & Bannatyne)</td> </tr>
+     <tr>
+    <th colspan="1" class="dd label" scope="row">Major:</th>
+    <td colspan="1" class="dddefault">Undeclared</td> </tr>
+     <tr>
+    <th class="ddlabel" scope="row">Academic Standing: </th>
+    <td class="dddefault">Too Few Cr Hrs for Assessment</td> </tr>
+     <tr>
+    <th class="ddlabel" scope="row">&nbsp;</th>
+    <td class="dddefault">&nbsp;</td>
+    </tr>
+    </tbody>
+    </table>
+    <br>
+    <table class="datadisplaytable" summary="This table displays the final grade for a class as well as the associated term, course, section, campus, credits, course title, attempted hours, earned hours, grade point average, and quality points for a level.">
+    <caption class="captiontext">Undergraduate Course work</caption>
+    <!--    FIVE PHOTO     -->
+    <!--    FIVE PHOTO     -->
+    <!--    FIVE PHOTO     -->
+    <!--    FIVE PHOTO     -->
+    <!--    FIVE PHOTO     -->
+    <tbody>
+        <tr>
+        <th class="ddheader" scope="col">
+        <acronym title="Course Reference Number">CRN</acronym> </th>
+        <th class="ddheader" scope="col">Subject</th> <th class="ddheader" scope="col">Course</th>
+        <th class="ddheader" scope="col">Section</th> <th class="ddheader" scope="col">Course Title</th> <th class="ddheader" scope="col">Campus</th>
+        <th class="ddheader" scope="col">Final Grade</th>
+        <th class="ddheader" scope="col">Grade Comment</th>
+        <th class="ddheader" scope="col">Grade Change Reason</th>
+        <th class="ddheader" scope="col">Attempted</th>
+        <th class="ddheader" scope="col">Earned</th>
+        <th class="ddheader" scope="col">
+        <p class="rightaligntext">
+        <acronym title="Grade Point Average">GPA</acronym> Hours"
+        </p> </th>
+        <th class="ddheader" scope="col">
+        <p class="rightaligntext">Quality Points</p>
+        </th>
+        <td class="dddead">&nbsp;</td>
+        </tr>
+        <tr>
+        <td class="dddefault">59633</td> <td class="dddefault">ENGL</td> <td class="dddefault">1340</td>
+        <td class="dddefault">A02</td>
+        <td class="dddefault">Introduction to Literary Analysis</td> <td class="dddefault">Main (Fort Garry & Bannatyne)</td>
+        <td class="dddefault">F</td>
+        <td class="dddefault">No Paper</td>
+        <td class="dddefault">&nbsp;</td>
+        <td class="dddefault">
+        <p class="rightaligntext"> 3.000</p> </td>
+        <td class="dddefault">
+        <p class="rightaligntext"> 3.000</p> </td>
+        <td class="dddefault">
+        <p class="rightaligntext"> 3.000</p> </td>
+        <td class="dddefault">
+        <p class="rightaligntext">0.00</p> </td>
+        <td class="dddead">&nbsp;</td> </tr>
+        <tr>
+        <td class="dddefault">50150</td> <td class="dddefault">PHIL</td>
+        <td class="dddefault">1290</td>
+        <td class="dddefault">A03</td>
+        <td class="dddefault">Critical Thinking</td>
+        <td class="dddefault">Main (Fort Garry & Bannatyne) </td>
+    <!--    SIX PHOTO     -->
+        <!--    SIX PHOTO     -->
+    <!--    SIX PHOTO     -->
+        <!--    SIX PHOTO     -->
+    <!--    SIX PHOTO     -->
+    
+        ...
+        <td class="dddefault">B</td>
+        <td class="dddefault">&nbsp;</td> <td class="dddefault">&nbsp;</td> <td class="dddefault">
+        ==
+        $0
+        <p class="rightaligntext"> 3.000</p> </td>
+        <td class="dddefault">
+        <p class="rightaligntext"> 3.000</p> </td>
+        <td class="dddefault">
+        <p class="rightaligntext"> 3.000</p> </td>
+        <td class="dddefault">
+        <p class="rightaligntext"> 9.00</p> </td>
+        <td class="dddead">&nbsp;</td> </tr>
+        <tr>
+        <td class="dddefault">62608</td> <td class="dddefault">POLS</td> <td class="dddefault">1502</td>
+        <td class="dddefault">A01</td>
+        <td class="dddefault">Introduction to Political Studies</td> <td class="dddefault">Main (Fort Garry & Bannatyne) </td>
+        <td class="dddefault">C</td>
+        <td class="dddefault">&nbsp;</td>
+        <td class="dddefault">&nbsp;</td>
+        <td class="dddefault">
+        <p class="rightaligntext"> 3.000</p> </td>
+        <td class="dddefault">
+        <p class="rightaligntext"> 3.000</p> </td>
+        <td class="dddefault">
+        <p class="rightaligntext"> 3.000</p> </td>
+        <td class="dddefault">
+        <p class="rightaligntext"> 6.00</p>
+        </td>
+        <td class="dddead">&nbsp;</td>
+        </tr>
+        </tbody>
+        </table>
+        <br>
+        <table class="datadisplaytable" summary="This layout table displays the users current, cumulative, transfer and overall Grade point average information.">
+        <caption class="captiontext">Undergraduate Summary</caption>
+        '<tbody>
+        <tr>
+        <td colspan="2" class="dddead">&nbsp;</td>
+        <th class="ddheader" scope="col">Attempted</th>
+        <th class="ddheader" scope="col">Earned</th>
+        <th class="ddheader" scope="col">
+        <acronym title="Grade Point Average">GPA</acronym> Hours"
+        </th>
+        <th class="ddheader" scope="col">Quality Points</th>
+    
+        <!--    SEVEN PHOTO     -->
+        <!--    SEVEN PHOTO     -->
+        <!--    SEVEN PHOTO     -->
+        <!--    SEVEN PHOTO     -->
+        <!--    SEVEN PHOTO     -->
+    
+        <th class="ddheader" scope="col">
+            <acronym title="Grade Point Average">GPA</acronym>
+            </th>
+            </tr>
+             <tr>
+            <th colspan="2" class="ddlabel" scope="row">Current Term: </th> <td class="dddefault">
+            <p class="rightaligntext"> 9.000</p>
+            </td>
+            <td class="dddefault">
+            <p class="rightaligntext"> 9.000</p> </td>
+            <td class="dddefault">
+            <p class="rightaligntext"> 9.000</p> </td>
+            <td class="dddefault">
+            <p class="rightaligntext"> 15.00</p> </td>
+            <td class="dddefault">
+            <p class="rightaligntext"> 1.67</p> </td>
+            </tr>
+            <tr>
+            <th colspan="2" class="dd label" scope="row">Cumulative: </th> <td class="dddefault">
+            <p class="rightaligntext"> 9.000</p>
+            </td>
+            <td class="dddefault">
+            <p class="rightaligntext"> 9.000</p> </td>
+            <td class="dddefault">
+            <p class="rightaligntext"> 9.000</p> </td>
+            <td class="dddefault">
+            <p class="rightaligntext"> 15.00</p> </td>
+            <td class="dddefault">
+            <p class="rightaligntext"> 1.67</p> </td>
+            </tr>
+            <tr>
+            <th colspan="2" class="dd label" scope="row">Transfer: </th> <td class="dddefault">
+            <p class="rightaligntext"> 0.000</p> </td>
+            <td class="dddefault">
+            <p class="rightaligntext"> 0.000</p> </td>
+            <td class="dddefault">
+            <p class="rightaligntext"> 0.000</p> </td>
+            <td class="dddefault">
+            <p class="rightaligntext">0.00</p> </td>
+            <td class="dddefault">
+            <p class="rightaligntext">0.00</p> </td>
+    <!--    EIGHTH PHOTO     -->
+    <!--    EIGHTH PHOTO     -->
+    <!--    EIGHTH PHOTO     -->
+    <!--    EIGHTH PHOTO     -->
+    <!--    EIGHTH PHOTO     -->
+    
+    </tr>
+    A
+     <tr>
+    <th colspan="2" class="ddlabel" scope="row">Overall: </th> <td class="dddefault">
+    <p class="rightaligntext"> 9.000</p>
+    </td>
+    <td class="dddefault">
+    <p class="rightaligntext"> 9.000</p> </td>
+    <td class="dddefault">
+    <p class="rightaligntext"> 9.000</p> </td>
+    <td class="dddefault">
+    <p class="rightaligntext"> 15.00</p> </td>
+    <td class="dddefault">
+    <p class="rightaligntext"> 1.67</p>
+    </td>
+    </tr>
+    </tbody> </table>
+    <!-- ** START OF twbkwbis.P_CloseDoc ** -->
+    <table class="plaintable" summary="This is table displays line separator at end of the page." width="100%" cellspacing="0" cellpadding="0" border="0"> Tetbody>
+    <tr>
+    <td class="bgtabon" width="100%" colspan="2">
+    <img src="/wtlgifs/web transparent.gif" alt="Transparent Image" class="headerImg" title="Transparent Image" name="web_transparent" hspace="0" vspace="0" border="0" height="3" width="10"> </td>
+    </tr> </tbody> </table>
+    <a href="#top" onmouseover="window.status = 'Skip to top of page'; return true" onmouseout="window.status=''; return true" onfocus="window.status = 'Skip to top of page'; return true" onblur="window.status=''; return true" class="skiplinks">Skip to top of page</a>
+    <a href="/ssb/bwskogrd.P ViewTermGrde" onmouseover="window.status = 'Select another Term'; return true" onmouseout="window.status='';
+    w.status='';
+    <p>&nbsp; </p>
+    </div>
+    return true">Select another Term</a>
+    <div class="footerbeforediv"> </div> <div class="footerafterdiv"> </div>
+    <div class="globalafterdiv"> </div>
+    <div class="globalfooterdiv"> </div>
+    <div class="pagefooterdiv">
+    <span class="releasetext">Release: 8.7.1</span> </div>
+    <div class="poweredbydiv"> </div>
+    <div class="div1"></div>
+    <div class="div2"></div> == $0
+    return true" onfocus="window.status = 'Select another Term'; return true" onblur="windo
+    <div class="div3"></div>
+    <div class="div4"></div>
+    <div class="div5"></div>
+    <div class="div6"></div>
+    <div class="banner_copyright">
+    <br>
+    <h5>
+    "2024 Ellucian Company L.P. and its affiliates." <br>
+    </h5>
+    </div>
+    </body>
+    </html>
+    
+    
