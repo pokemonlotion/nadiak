@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <link rel="stylesheet" href="/css/UM_web_defaultmenu.css" type="text/css">
+    <link rel="stylesheet" href="/css/UM_web_defaultprint.css" type="text/css" media="print">
+    <title>Final Grades</title>
+    <script type="text/javascript">
+        // Prevent multiple submissions
+        let submitCount = 0;
+
+        function checkSubmit() {
+            if (submitCount === 0) {
+                submitCount++;
+                return true;
+            } else {
+                alert("Your changes have already been submitted.");
+                return false;
+            }
+        }
+
+        // Function to open a window
+        function windowOpen(windowUrl) {
+            const helpWin = window.open(windowUrl, '', 'toolbar=yes, status=no, scrollbars=yes, menubar=yes, resizable=yes, directories=no, location=no, width=350, height=400');
+            if (helpWin) {
+                helpWin.focus();
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="headerwrapperdiv">
+        <div class="pageheaderdiv1">
+            <a href="#main_content" class="skiplinks">Go to Main Content</a>
+            <h1>University of Manitoba - Aurora</h1>
+        </div>
+        <div class="headerlinksdiv">
+            <span class="pageheaderlinks2">
+                <a href="/ssb/twbkwbis.P_GenMenu?name=bmenu.P_GenMnu">Personal Information</a> |
+                <a href="/ssb/twbkwbis.P_GenMenu?name=bmenu.P_StuMainMnu">Enrolment & Academic Records</a> |
+                <a href="/ssb/twbkwbis.P_GenMenu?name=bmenu.P_BsacMnu">Student Awards and Financial Aid</a>
+            </span>
+        </div>
+    </div>
+
+    <div class="pagetitlediv">
+        <table class="plaintable" summary="Page title and static header">
+            <tr>
+                <td>
+                    <h2>Final Grades</h2>
+                </td>
+                <td>
+                    <div class="staticheaders">
+                        <p>Rasha Ahamed - 008022933</p>
+                        <p>Winter 2024</p>
+                        <p>Dec 22, 2024 07:09 pm</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="pagebodydiv">
+        <div class="infotextdiv">
+            <span class="infotext">
+                <b>Approved final grades are released each morning. If you do not see your final grades, please check back tomorrow.</b>
+            </span>
+        </div>
+
+        <table class="datadisplaytable" summary="Student curriculum information">
+            <caption>Student Information</caption>
+            <tr>
+                <th>Current Program:</th>
+                <td>Undeclared</td>
+            </tr>
+            <tr>
+                <th>Level:</th>
+                <td>Undergraduate</td>
+            </tr>
+            <tr>
+                <th>Program:</th>
+                <td>University 1</td>
+            </tr>
+            <tr>
+                <th>Admit Term:</th>
+                <td>Winter 2024</td>
+            </tr>
+            <tr>
+                <th>Academic Standing:</th>
+                <td>Too Few Cr Hrs for Assessment</td>
+            </tr>
+        </table>
+
+        <table class="datadisplaytable" summary="Final grades table">
+            <caption>Undergraduate Coursework</caption>
+            <tr>
+                <th>CRN</th>
+                <th>Subject</th>
+                <th>Course</th>
+                <th>Title</th>
+                <th>Final Grade</th>
+            </tr>
+            <tr>
+                <td>59633</td>
+                <td>ENGL</td>
+                <td>1340</td>
+                <td>Introduction to Literary Analysis</td>
+                <td>F</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
